@@ -1,0 +1,379 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beach Project</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="/assets/images/sunnyclowdy.png"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/forecast.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="javascript/functions.js" defer></script>
+
+  </head>
+  <body>
+    <header>
+      <div class="logo-container">
+        <img src="assets/images/logobeach.png" alt="Logo Image" id="hero" />
+      </div>
+    </header>
+<main>
+    <div class="forecast-table">
+      <table>
+        <caption class="d-flex justify-content-between align-items-center">
+          <h1 class="m-0">Forecast</h1>
+          <aside>
+            <i class="bi bi-caret-left"></i>
+            <i class="bi bi-caret-right"></i>
+          </aside>
+        </caption>
+        <tr class="days">
+          <th class="hidden"></th>
+          <th>Today <h1 class="headText">0.2m</h1><span class="green-bar"></span></th>
+          <th>Tommorow<h1 class="headText">0.4m</h1><span class="green-bar"></span></th>
+          <th>Thu<h1 class="headText">0.5m</h1><span class="green-bar"></span></th>
+          <th class="hidden">Thu<h1 class="headText">0.3m</h1><span class="green-bar"></span></th>
+        </tr>
+
+          <th class="mobile">
+            <i class="bi bi-three-dots"></i>
+          </th>
+
+        <tr class="mobile">
+          
+          <h2>Today<i class="bi bi-chevron-compact-down"></i></h2>
+          </tr>
+        
+        <tr class="mobile">
+          <th class="time">Time</th>
+          <th class="status">Status</th>
+          <th class="windM">Wind</th>
+          <th class="pressureM">Pressure</th>
+          <th class="weather">Weather</th>
+        </tr>
+
+        <tr class="mobile">
+          <th class="timed">6am</th>
+          <th class="statusd">Safe</th>
+          <th class="windd">32</th>
+          <th class="pressured">24</th>
+          <th class="weatherd">24</th>
+        </tr>
+
+        <tr class="mobile">
+          <th class="timed">6am</th>
+          <th class="statusd">Safe</th>
+          <th class="windd">32</th>
+          <th class="pressured">24</th>
+          <th class="weatherd">24</th>
+        </tr>
+
+        <tr class="mobile">
+          <th class="timed">6am</th>
+          <th class="statusd">Safe</th>
+          <th class="windd">32</th>
+          <th class="pressured">24</th>
+          <th class="weatherd">24</th>
+        </tr>
+
+        <tr class="wind">
+          <th>Wind Speed <i class="bi bi-info-circle" data-bs-toggle="popover" data-bs-title="Wind Speed" data-bs-content="Wind speed is the speed of the weather related air movement from one place to the next.">
+            </i></th>
+          <th class="tableData">
+            <h4>1400</h4>
+
+            <span></span>
+            <span></span>
+            <span></span>
+          </th>
+          <th class="tableData">
+            <h4>1400</h4>
+
+            <span></span>
+            <span></span>
+            <span></span>
+          </th>
+          <th class="tableData">
+            <h4>1400</h4>
+
+            <span></span>
+            <span></span>
+            <span></span>
+          </th>
+          <th class="tableData">
+            <h4>1400</h4>
+
+            <span></span>
+            <span></span>
+            <span></span>
+          </th>
+        </tr>
+
+        <tr class="surface">
+          <th >Global Surface <i class="bi bi-info-circle" data-bs-toggle="popover" data-bs-title="Global Surface" data-bs-content="Sometimes referred to as global mean surface temperature"></i></th>
+          <th class="tableData">
+            <h4>1400</h4>
+
+            <span></span>
+            <span></span>
+            <span></span>
+          </th>
+          <th class="tableData">
+            <h4>1400</h4>
+
+            <span></span>
+            <span></span>
+            <span></span>
+          </th>
+          <th class="tableData">
+            <h4>1400</h4>
+
+            <span></span>
+            <span></span>
+            <span></span>
+          </th>
+          <th class="tableData">
+            <h4>1400</h4>
+
+            <span></span>
+            <span></span>
+            <span></span>
+          </th>
+        </tr>
+
+        <tr class="dpd">
+          <th>DPD<i class="bi bi-info-circle" data-bs-toggle="popover" data-bs-title="DPD" data-bs-content="The Department of Planning and Development"></i></th>
+          <th class="tableData">
+            <h4>1400</h4>
+
+            <span></span>
+            <span></span>
+            <span></span>
+          </th>
+          <th class="tableData">
+            <h4>1400</h4>
+
+            <span></span>
+            <span></span>
+            <span></span>
+          </th>
+          <th class="tableData">
+            <h4>1400</h4>
+
+            <span></span>
+            <span></span>
+            <span></span>
+          </th>
+          <th class="tableData">
+            <h4>1400</h4>
+
+            <span></span>
+            <span></span>
+            <span></span>
+          </th>
+        </tr>
+
+        <tr class="mwd">
+          <th >MWD <i class="bi bi-info-circle" data-bs-toggle="popover" data-bs-title="MWD" data-bs-content="MWD is a system of taking measurements while drilling downhole."></i></th>
+          <th class="tableData">
+            <h4>1400</h4>
+
+            <span></span>
+            <span></span>
+            <span></span>
+          </th>
+          <th class="tableData">
+            <h4>1400</h4>
+
+            <span></span>
+            <span></span>
+            <span></span>
+          </th>
+          <th class="tableData">
+            <h4>1400</h4>
+
+            <span></span>
+            <span></span>
+            <span></span>
+          </th>
+          <th class="tableData">
+            <h4>1400</h4>
+
+            <span></span>
+            <span></span>
+            <span></span>
+          </th>
+        </tr>
+
+        <tr class="pressure">
+          <th >Pressure <i class="bi bi-info-circle" data-bs-toggle="popover" data-bs-title="Pressure" data-bs-content="Continuous physical force exerted on or against an object by something in contact with it."></i></th>
+          <th class="tableData">
+            <h4>1400</h4>
+
+            <span></span>
+            <span></span>
+            <span></span>
+          </th>
+          <th class="tableData">
+            <h4>1400</h4>
+
+            <span></span>
+            <span></span>
+            <span></span>
+          </th>
+          <th class="tableData">
+            <h4>1400</h4>
+
+            <span></span>
+            <span></span>
+            <span></span>
+          </th>
+          <th class="tableData">
+            <h4>1400</h4>
+
+            <span></span>
+            <span></span>
+            <span></span>
+          </th>
+        </tr>
+
+        <tr class="atmp">
+          <th>ATMP <i class="bi bi-info-circle" data-bs-toggle="popover" data-bs-title="ATMP" data-bs-content="Medicines for human use that are based on genes, tissues or cells."></i></th>
+          <th class="tableData">
+            <h4>1400</h4>
+
+            <span></span>
+            <span></span>
+            <span></span>
+          </th>
+          <th class="tableData">
+            <h4>1400</h4>
+
+            <span></span>
+            <span></span>
+            <span></span>
+          </th>
+          <th class="tableData">
+            <h4>1400</h4>
+
+            <span></span>
+            <span></span>
+            <span></span>
+          </th>
+          <th class="tableData">
+            <h4>1400</h4>
+
+            <span></span>
+            <span></span>
+            <span></span>
+          </th>
+        </tr>
+
+        <tr class="wtmp">
+          <th >WTMP <i class="bi bi-info-circle" data-bs-toggle="popover" data-bs-title="WTMP" data-bs-content="Wtmp is a file containing a history of all logins and logouts."></i></th>
+          <th class="tableData">
+            <h4>1400</h4>
+
+            <span></span>
+            <span></span>
+            <span></span>
+          </th>
+          <th class="tableData">
+            <h4>1400</h4>
+
+            <span></span>
+            <span></span>
+            <span></span>
+          </th>
+          <th class="tableData">
+            <h4>1400</h4>
+
+            <span></span>
+            <span></span>
+            <span></span>
+          </th>
+          <th class="tableData">
+            <h4>1400</h4>
+
+            <span></span>
+            <span></span>
+            <span></span>
+          </th>
+        </tr>
+
+        <tr class="dewp">
+          <th>DEEP <i class="bi bi-info-circle" data-bs-toggle="popover" data-bs-title="DEEP" data-bs-content="Extending far down from the top or surface."></i></th>
+          <th class="tableData">
+            <h4>1400</h4>
+
+            <span></span>
+            <span></span>
+            <span></span>
+          </th>
+          <th class="tableData">
+            <h4>1400</h4>
+
+            <span></span>
+            <span></span>
+            <span></span>
+          </th>
+          <th class="tableData">
+            <h4>1400</h4>
+
+            <span></span>
+            <span></span>
+            <span></span>
+          </th>
+          <th class="tableData">
+            <h4>1400</h4>
+
+            <span></span>
+            <span></span>
+            <span></span>
+          </th>
+        </tr>
+      </table>
+      
+    
+    </div>
+   
+</main>
+
+<!-- poper.js -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script>
+const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
+const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]');
+const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl));
+
+   
+</script>
+
+  </body>
+  </html>
+ 
